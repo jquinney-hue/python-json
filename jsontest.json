@@ -1,0 +1,17 @@
+[
+  {
+    "Question": "Show how a binary search will be used to find the number 10 in the following data set: 1 2 5 6 7 10 20",
+    "Answer": "**Steps:**\n- Middle element is checked repeatedly until 10 is found.\n- The value 10 is located after reducing the search range.",
+    "Explanation": "- Start with the list: 1, 2, 5, 6, 7, 10, 20\n- Middle index = 3 \u2192 value = 6\n- 10 > 6 \u2192 search right half\n- New middle = index 5 \u2192 value = 10 (found)"
+  },
+  {
+    "Question": "A student writes an algorithm to input two numbers and add them together. Identify the two logic errors and correct them.",
+    "Answer": "- Line 03: Should be `total = num1 + num2`\n- Line 04: Condition should check `total <= 20` as well.",
+    "Explanation": "- Error 1: Line 03 adds num1 to itself.\n- Error 2: Condition only checks lower bound (>= 10). Must also check <= 20."
+  },
+  {
+    "Question": "Write pseudocode to concatenate two words (Hello and Everyone) into message.",
+    "Answer": "word1 \u2190 \"Hello\"\nword2 \u2190 \"Everyone\"\nmessage \u2190 word1 + word2",
+    "Explanation": "- Store values in variables.\n- Use concatenation operator to combine into message."
+  }
+]
