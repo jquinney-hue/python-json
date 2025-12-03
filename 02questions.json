@@ -1,152 +1,152 @@
 [
   {
-    "Question": "Sample question 1: Explain concept 1.",
-    "Answer": "Step-by-step answer for question 1.",
-    "Explanation": "Full explanation for question 1, assuming no prior knowledge."
+    "Question": "1. A program needs to store the age of a user, for example 15.\n\n(a) State a suitable data type for the variable `age`.\n(b) Explain why this data type is appropriate for storing an age.",
+    "Answer": "(a) A suitable data type is **integer**.\n\n(b) An age is always a whole number and does not require decimal places. An integer data type stores whole numbers efficiently, making it appropriate for this use.",
+    "Explanation": "To solve this, you must first understand what kind of value an age is. Ages (0, 1, 2, …) are **whole numbers** with no decimal part. In programming, the **integer** data type is designed specifically for whole-number storage.\n\nOther types, such as real/float, allow decimal places, which are unnecessary here and would waste memory. Strings store text, which is also inappropriate because you couldn’t perform arithmetic like `age + 1`.\n\nTherefore, since ages are whole numbers and may be used in calculations, the **integer** data type is the correct choice."
   },
   {
-    "Question": "Sample question 2: Explain concept 2.",
-    "Answer": "Step-by-step answer for question 2.",
-    "Explanation": "Full explanation for question 2, assuming no prior knowledge."
+    "Question": "2. A student writes the following line of pseudocode:\n\nOUTPUT \"Enter your name\"\n\n(a) Identify what is meant by the term **output**.\n(b) State one output device that could display this message.",
+    "Answer": "(a) Output means sending information from the computer **to the user**.\n(b) A suitable output device is a **monitor**.",
+    "Explanation": "In programming, **output** refers to any data that the computer sends outward so that the user can see or hear it. Output can appear through:\n- A monitor (text or graphics)\n- Speakers (sound)\n- A printer (printed output)\n\nIn this question, the pseudocode `OUTPUT \"Enter your name\"` instructs the computer to display this text to the user, usually on a **monitor**, which is the most common device used to show text."
   },
   {
-    "Question": "Sample question 3: Explain concept 3.",
-    "Answer": "Step-by-step answer for question 3.",
-    "Explanation": "Full explanation for question 3, assuming no prior knowledge."
+    "Question": "3. A variable `valid` is used in a program and can only ever hold the values TRUE or FALSE.\n\n(a) State the most appropriate data type for `valid`.\n(b) Explain why this is the most appropriate data type.",
+    "Answer": "(a) The most appropriate data type is **Boolean**.\n\n(b) A Boolean data type stores only TRUE or FALSE, which matches the intended use of the `valid` variable.",
+    "Explanation": "Boolean is the correct data type whenever a variable needs to represent a simple **yes/no** or **true/false** condition.\n\nA Boolean variable can store exactly two values:\n- TRUE\n- FALSE\n\nThis prevents the programmer from accidentally storing inappropriate data (e.g. numbers or text). Since the variable `valid` is being used as a flag to indicate validity, Boolean is the most suitable choice."
   },
   {
-    "Question": "Sample question 4: Explain concept 4.",
-    "Answer": "Step-by-step answer for question 4.",
-    "Explanation": "Full explanation for question 4, assuming no prior knowledge."
+    "Question": "4. Consider the following pseudocode:\n\ncount ← 0\nWHILE count < 3 DO\n    OUTPUT \"Hello\"\n    count ← count + 1\nENDWHILE\n\n(a) State how many times \"Hello\" will be output.\n(b) Explain step by step why this number of outputs occurs.",
+    "Answer": "(a) \"Hello\" will be output **3 times**.\n\n(b) Step-by-step:\n- Start: count = 0 → 0 < 3 is TRUE → output once → count becomes 1.\n- Next: 1 < 3 is TRUE → output again → count becomes 2.\n- Next: 2 < 3 is TRUE → output again → count becomes 3.\n- Next: 3 < 3 is FALSE → loop stops.",
+    "Explanation": "The WHILE loop repeats **as long as** the condition `count < 3` is TRUE.\n\nIteration breakdown:\n1. `count = 0` → 0 < 3 → output \"Hello\" → count = 1\n2. `count = 1` → 1 < 3 → output \"Hello\" → count = 2\n3. `count = 2` → 2 < 3 → output \"Hello\" → count = 3\n4. `count = 3` → 3 < 3 → FALSE → loop ends\n\nSince the body of the loop executed three times, \"Hello\" appears three times."
   },
   {
-    "Question": "Sample question 5: Explain concept 5.",
-    "Answer": "Step-by-step answer for question 5.",
-    "Explanation": "Full explanation for question 5, assuming no prior knowledge."
+    "Question": "5. A program asks the user to enter their exam mark (0–100):\n\nmark ← INPUT(\"Enter mark\")\nIF mark >= 50 THEN\n    OUTPUT \"Pass\"\nELSE\n    OUTPUT \"Fail\"\nENDIF\n\n(a) State the output when the user enters 72.\n(b) State the output when the user enters 34.\n(c) Explain how the IF statement decides which message to output.",
+    "Answer": "(a) Pass\n(b) Fail\n(c) The IF statement checks whether `mark >= 50`. If the condition is TRUE it outputs Pass; if FALSE it goes to the ELSE part and outputs Fail.",
+    "Explanation": "The IF statement contains a **Boolean condition**: `mark >= 50`.\n\nWhen the user enters 72:\n- 72 ≥ 50 is TRUE → program outputs **Pass**.\n\nWhen the user enters 34:\n- 34 ≥ 50 is FALSE → program follows the ELSE branch → outputs **Fail**.\n\nThe IF statement works by evaluating the expression `mark >= 50`.\n- If TRUE → THEN block runs.\n- If FALSE → ELSE block runs.\n\nOnly one branch can run, ensuring the correct message is shown based on the user's mark."
   },
   {
-    "Question": "Sample question 6: Explain concept 6.",
-    "Answer": "Step-by-step answer for question 6.",
-    "Explanation": "Full explanation for question 6, assuming no prior knowledge."
+    "Question": "6. A student writes this pseudocode to calculate the sum of the first 5 positive integers:\n\ntotal ← 0\nFOR i ← 1 TO 5\n    total ← total + i\nNEXT i\nOUTPUT total\n\n(a) State the final value of `total`.\n(b) Show, step by step, how `total` changes during the loop.",
+    "Answer": "(a) 15\n\n(b) Step-by-step:\n- Start: total = 0\n- i = 1 → total = 0 + 1 = 1\n- i = 2 → total = 1 + 2 = 3\n- i = 3 → total = 3 + 3 = 6\n- i = 4 → total = 6 + 4 = 10\n- i = 5 → total = 10 + 5 = 15",
+    "Explanation": "The FOR loop runs from 1 to 5, adding each value of i to `total`.\n- It begins with total = 0.\n- Each loop iteration increases total by the current value of i.\n- After 5 iterations the values added are 1, 2, 3, 4, and 5.\nAdding these gives 15, which is the final total."
   },
   {
-    "Question": "Sample question 7: Explain concept 7.",
-    "Answer": "Step-by-step answer for question 7.",
-    "Explanation": "Full explanation for question 7, assuming no prior knowledge."
+    "Question": "7. A program stores a user's password in the variable `password` as a string.\n\n(a) Explain why a string data type is suitable for storing passwords.\n(b) Give one reason why storing a password as an integer would NOT be suitable.",
+    "Answer": "(a) A string can store letters, digits, and symbols – all of which may appear in a password.\n(b) An integer can only store digits, so it cannot store letters or special characters that many passwords require.",
+    "Explanation": "Passwords commonly include a mix of characters, such as letters (A–Z), digits, and symbols (!, ?, %, etc.). The **string** data type is designed to hold sequences of characters, so it can store any valid password.\n\nAn **integer** only stores whole numbers. This means:\n- It cannot store letters.\n- It cannot store symbols.\n- It would remove leading zeros (e.g., ‘0123’ becomes ‘123’).\n\nTherefore, integers are not suitable for storing passwords."
   },
   {
-    "Question": "Sample question 8: Explain concept 8.",
-    "Answer": "Step-by-step answer for question 8.",
-    "Explanation": "Full explanation for question 8, assuming no prior knowledge."
+    "Question": "8. A variable `score` holds the value 10. The following pseudocode is executed:\n\nscore ← score + 5\nscore ← score * 2\n\n(a) State the final value of `score`.\n(b) Explain each step used to calculate this final value.",
+    "Answer": "(a) 30\n\n(b) Steps:\n- Start with score = 10\n- First line: score = 10 + 5 = 15\n- Second line: score = 15 * 2 = 30",
+    "Explanation": "The value of `score` is updated **in sequence**, with each line using the new value from the previous step.\n1. Begin with score = 10.\n2. The statement `score ← score + 5` adds 5, giving score = 15.\n3. The next statement multiplies the new score by 2, giving 30.\nTherefore, after both updates, the final value is 30."
   },
   {
-    "Question": "Sample question 9: Explain concept 9.",
-    "Answer": "Step-by-step answer for question 9.",
-    "Explanation": "Full explanation for question 9, assuming no prior knowledge."
+    "Question": "9. A teacher wants a program that:\n- asks a student to enter their name\n- then displays the message `Hello` followed by their name\n\nWrite pseudocode for this program.",
+    "Answer": "name ← INPUT(\"Enter your name: \")\nOUTPUT \"Hello \" + name",
+    "Explanation": "The program needs to:\n1. Prompt the user to enter their name.\n2. Store whatever they type in a variable.\n3. Display a greeting using that stored value.\n\n`INPUT()` reads text from the user.\n`OUTPUT` displays the greeting by joining (concatenating) \"Hello \" with the variable `name`."
   },
   {
-    "Question": "Sample question 10: Explain concept 10.",
-    "Answer": "Step-by-step answer for question 10.",
-    "Explanation": "Full explanation for question 10, assuming no prior knowledge."
+    "Question": "10. In a quiz program, a variable `lives` stores how many chances the player has left. It starts at 3:\n\nlives ← 3\nlives ← lives - 1\n\n(a) State the new value of `lives`.\n(b) Explain why subtracting 1 from `lives` is useful in a game.",
+    "Answer": "(a) 2\n(b) Subtracting 1 reduces the player's remaining chances whenever they make a mistake. When lives reach 0, the game can end.",
+    "Explanation": "Games often track how many attempts a player has left using a counter variable. Starting at 3 means the player has three chances. Each mistake reduces this by 1.\n\n`lives ← lives - 1` means:\n- Take the current value (3), subtract 1, and store the result (2).\n\nWhen lives eventually become 0, the game knows the player has run out of chances."
   },
   {
-    "Question": "Sample question 11: Explain concept 11.",
-    "Answer": "Step-by-step answer for question 11.",
-    "Explanation": "Full explanation for question 11, assuming no prior knowledge."
+    "Question": "11. A program reads an integer `num` from the user and should output whether it is even or odd.\n\n(a) Complete the missing condition in the pseudocode:\n\nnum ← INPUT(\"Enter an integer: \")\nIF __________ THEN\n    OUTPUT \"Even\"\nELSE\n    OUTPUT \"Odd\"\nENDIF\n\n(b) Explain how your condition works.",
+    "Answer": "(a) The condition is: num MOD 2 = 0\n\n(b) An even number divided by 2 has a remainder of 0. An odd number divided by 2 has a remainder of 1. Therefore, if num MOD 2 = 0 is TRUE, the number is even. Otherwise, it is odd.",
+    "Explanation": "The MOD operator returns the remainder after division. For example:\n- 8 MOD 2 = 0 (even)\n- 11 MOD 2 = 1 (odd)\n\nA number is even if dividing it by 2 leaves **no remainder**. Therefore, the expression `num MOD 2 = 0` will be TRUE only for even numbers. If the condition is FALSE, the ELSE part runs and the number is odd."
   },
   {
-    "Question": "Sample question 12: Explain concept 12.",
-    "Answer": "Step-by-step answer for question 12.",
-    "Explanation": "Full explanation for question 12, assuming no prior knowledge."
+    "Question": "12. A programmer writes pseudocode to find the largest of three numbers:\n\nnum1 ← INPUT(\"Enter first number\")\nnum2 ← INPUT(\"Enter second number\")\nnum3 ← INPUT(\"Enter third number\")\nlargest ← num1\nIF num2 > largest THEN\n    largest ← num2\nENDIF\nIF num3 > largest THEN\n    largest ← num3\nENDIF\nOUTPUT largest\n\n(a) Explain step-by-step how this algorithm finds the largest number.\n(b) State the output if the user enters 5, 12 and 9.",
+    "Answer": "(a) The algorithm starts by assuming num1 is the largest. It then compares num2 with largest and updates it if num2 is bigger. It repeats the comparison with num3. After both checks, largest holds the biggest value.\n\n(b) For inputs 5, 12, 9 the largest is 12.",
+    "Explanation": "Step-by-step:\n1. largest ← num1 → 5\n2. Compare num2 (12) with largest (5). 12 > 5 so largest becomes 12.\n3. Compare num3 (9) with largest (12). 9 > 12 is FALSE so largest stays 12.\n4. Output 12.\n\nThe algorithm always checks each value and updates the largest whenever a bigger number is found."
   },
   {
-    "Question": "Sample question 13: Explain concept 13.",
-    "Answer": "Step-by-step answer for question 13.",
-    "Explanation": "Full explanation for question 13, assuming no prior knowledge."
+    "Question": "13. A school stores five student names in an array:\n\nnames[0] = \"Ali\"\nnames[1] = \"Beth\"\nnames[2] = \"Chen\"\nnames[3] = \"Deepa\"\nnames[4] = \"Eli\"\n\n(a) State the index of the element storing \"Chen\".\n(b) Explain how to output all names using a loop.",
+    "Answer": "(a) Index 2.\n(b) Use a FOR loop from 0 to 4, outputting names[i] each iteration.",
+    "Explanation": "Arrays store values in numbered positions called indices. In this case, \"Chen\" appears at names[2].\n\nTo output all names, we need to visit each index in order:\nFOR i ← 0 TO 4\n    OUTPUT names[i]\nNEXT i\n\nThis displays Ali, Beth, Chen, Deepa and Eli in order."
   },
   {
-    "Question": "Sample question 14: Explain concept 14.",
-    "Answer": "Step-by-step answer for question 14.",
-    "Explanation": "Full explanation for question 14, assuming no prior knowledge."
+    "Question": "14. A validation routine checks that a value age is between 13 and 18 inclusive.\n\n(a) Write a single IF condition that is TRUE only when age is between 13 and 18 inclusive.\n(b) Explain what happens for ages 12, 13, 18, and 19.",
+    "Answer": "(a) IF age >= 13 AND age <= 18 THEN\n\n(b) 12 → fails first part (too small).\n13 → passes both conditions.\n18 → passes both conditions.\n19 → fails second part (too large).",
+    "Explanation": "The expression `age >= 13 AND age <= 18` checks two things:\n- age is not less than 13\n- age is not greater than 18\n\nBoth must be TRUE.\n- 12 ≥ 13? FALSE → whole condition FALSE.\n- 13 ≥ 13? TRUE AND 13 ≤ 18? TRUE → TRUE.\n- 18 ≥ 13? TRUE AND 18 ≤ 18? TRUE → TRUE.\n- 19 ≤ 18? FALSE → whole condition FALSE."
   },
   {
-    "Question": "Sample question 15: Explain concept 15.",
-    "Answer": "Step-by-step answer for question 15.",
-    "Explanation": "Full explanation for question 15, assuming no prior knowledge."
+    "Question": "15. The following pseudocode counts how many of 5 inputs are positive:\n\ncountPositive ← 0\nFOR i ← 1 TO 5\n    num ← INPUT(\"Enter a number\")\n    IF num > 0 THEN\n        countPositive ← countPositive + 1\n    ENDIF\nNEXT i\nOUTPUT countPositive\n\n(a) State what countPositive is used for.\n(b) If the user enters -3, 0, 7, 2, -1, what is the final output?",
+    "Answer": "(a) countPositive stores how many inputs are greater than 0.\n(b) The output is 2 (only 7 and 2 are positive).",
+    "Explanation": "Each time a number is entered, the program checks if it is greater than 0. If it is, countPositive is increased by 1.\nTracing the values:\n-3 → not positive → count = 0\n0 → not positive → count = 0\n7 → positive → count = 1\n2 → positive → count = 2\n-1 → not positive → count = 2\n\nThe final output is 2."
   },
   {
-    "Question": "Sample question 16: Explain concept 16.",
-    "Answer": "Step-by-step answer for question 16.",
-    "Explanation": "Full explanation for question 16, assuming no prior knowledge."
+    "Question": "16. The following pseudocode calculates the average of four test scores:\n\ntotal ← 0\nFOR i ← 1 TO 4\n    score ← INPUT(\"Enter score\")\n    total ← total + score\nNEXT i\naverage ← total / 4\nOUTPUT average\n\n(a) Explain why dividing total by 4 gives the correct average.\n(b) If the user enters 10, 20, 30 and 40, state the final value of average.",
+    "Answer": "(a) The average is the sum of all values divided by the number of values. There are 4 scores, so we divide total by 4.\n(b) Total = 10 + 20 + 30 + 40 = 100 → average = 100 / 4 = 25.",
+    "Explanation": "An average (mean) is calculated using the formula:\n\naverage = (sum of values) ÷ (number of values)\n\nIn this program, total accumulates the four input scores. Since exactly four numbers are entered, dividing the final total by 4 gives the average.\n\nFor the specific example:\n- After input: total = 100\n- average = 100 / 4 = 25\nSo the output is 25."
   },
   {
-    "Question": "Sample question 17: Explain concept 17.",
-    "Answer": "Step-by-step answer for question 17.",
-    "Explanation": "Full explanation for question 17, assuming no prior knowledge."
+    "Question": "17. A program repeatedly asks the user to guess a secret number until they guess correctly.\n\n(a) Explain why a condition-controlled loop (WHILE) is more suitable than a FOR loop.\n(b) Write pseudocode using a WHILE loop to keep asking until guess equals secret.",
+    "Answer": "(a) A FOR loop repeats a fixed number of times, but we do not know how many guesses the user will need. A WHILE loop repeats until the condition is met.\n(b) Example pseudocode:\n\nsecret ← 7\nguess ← -1\nWHILE guess <> secret DO\n    guess ← INPUT(\"Enter your guess: \")\nENDWHILE\nOUTPUT \"Correct!\"",
+    "Explanation": "A FOR loop is used when the number of iterations is known in advance. In this case, we do not know how many guesses the user will need, so a condition-controlled loop is required.\n\nA WHILE loop continues **as long as** the condition is TRUE. Here, it repeats while guess is not equal to secret. As soon as the user guesses correctly, the condition becomes FALSE and the loop ends."
   },
   {
-    "Question": "Sample question 18: Explain concept 18.",
-    "Answer": "Step-by-step answer for question 18.",
-    "Explanation": "Full explanation for question 18, assuming no prior knowledge."
+    "Question": "18. A function Square takes an integer n and returns its square.\n\n(a) Write the pseudocode for the function.\n(b) State the value returned by Square(5).",
+    "Answer": "(a) FUNCTION Square(n : INTEGER) RETURNS INTEGER\n        result ← n * n\n        RETURN result\n    ENDFUNCTION\n\n(b) Square(5) returns 25.",
+    "Explanation": "A function takes input (parameters) and returns a value. To square a number, multiply it by itself.\n\nFor n = 5:\n5 × 5 = 25\nTherefore Square(5) outputs 25."
   },
   {
-    "Question": "Sample question 19: Explain concept 19.",
-    "Answer": "Step-by-step answer for question 19.",
-    "Explanation": "Full explanation for question 19, assuming no prior knowledge."
+    "Question": "19. A linear search is used to find the value 9 in the array:\n\n[4, 8, 2, 9, 5]\n\n(a) State the indices checked, in order.\n(b) Explain how the search decides when to stop.",
+    "Answer": "(a) Indices checked: 0, 1, 2, 3, 4. In this case it will stop early at index 3 where the value 9 is found.\n(b) The search checks each element in order. It stops if it finds the value or reaches the end of the array.",
+    "Explanation": "A linear search begins at the first element and moves forward one step at a time. For the given array:\n- Index 0 → 4   (not 9)\n- Index 1 → 8   (not 9)\n- Index 2 → 2   (not 9)\n- Index 3 → 9   (target found → stop)\n\nThe algorithm always stops when:\n1. The value is found, or\n2. The end of the array is reached without success."
   },
   {
-    "Question": "Sample question 20: Explain concept 20.",
-    "Answer": "Step-by-step answer for question 20.",
-    "Explanation": "Full explanation for question 20, assuming no prior knowledge."
+    "Question": "20. A high score table is sorted in ascending order. A binary search is used to check whether a score is present.\n\n(a) State one advantage of a binary search compared to a linear search.\n(b) Explain why binary search requires the data to be sorted.",
+    "Answer": "(a) Binary search is much faster because it halves the search space each step.\n(b) The middle value can only be compared meaningfully if the order of values is known. Without sorting, the algorithm cannot decide which half to discard.",
+    "Explanation": "Binary search repeatedly examines the middle element. If the target is smaller, it only needs to search the left half; if larger, only the right half. This removes half the remaining items at each step, making it very efficient.\n\nThis only works if the array is sorted. If the items are not in order, comparing to the middle element tells you nothing about which half may contain the target, so binary search becomes invalid."
   },
   {
-    "Question": "Sample question 21: Explain concept 21.",
-    "Answer": "Step-by-step answer for question 21.",
-    "Explanation": "Full explanation for question 21, assuming no prior knowledge."
+    "Question": "21. A program reads 6 temperatures into an array temps[0..5]. The task is to find both the smallest and largest temperature in a single pass.\n\n(a) Write pseudocode that:\n- sets minTemp and maxTemp to temps[0]\n- loops through the remaining elements\n- updates minTemp and maxTemp where needed.\n\n(b) Explain why this single-pass method is more efficient than using two separate loops.",
+    "Answer": "(a) Example pseudocode:\n\nminTemp ← temps[0]\nmaxTemp ← temps[0]\nFOR i ← 1 TO 5\n    IF temps[i] < minTemp THEN\n        minTemp ← temps[i]\n    ENDIF\n    IF temps[i] > maxTemp THEN\n        maxTemp ← temps[i]\n    ENDIF\nNEXT i\nOUTPUT minTemp\nOUTPUT maxTemp\n\n(b) Using one loop processes each value only once. Two loops would scan the array twice, doubling the number of comparisons. A single pass reduces overall operations and is faster for large arrays.",
+    "Explanation": "The algorithm sets both minTemp and maxTemp to the first value so we have a valid starting point. During the loop, each temperature is compared against both variables:\n- If temps[i] is smaller than minTemp, update minTemp.\n- If temps[i] is larger than maxTemp, update maxTemp.\n\nSince each temperature is checked only once, this requires fewer comparisons than running two separate loops. For large datasets, halving the number of scans can greatly improve efficiency."
   },
   {
-    "Question": "Sample question 22: Explain concept 22.",
-    "Answer": "Step-by-step answer for question 22.",
-    "Explanation": "Full explanation for question 22, assuming no prior knowledge."
+    "Question": "22. A program stores 10 integers in values[0..9]. The following pseudocode attempts to count how many are even:\n\ncountEven ← 0\nFOR i ← 0 TO 10\n    IF values[i] MOD 2 = 0 THEN\n        countEven ← countEven + 1\n    ENDIF\nNEXT i\nOUTPUT countEven\n\n(a) Identify and explain the error.\n(b) Correct the FOR loop so it processes the array safely.",
+    "Answer": "(a) The loop runs from 0 to 10, but values[10] does not exist because the array ends at index 9. Accessing values[10] causes an out-of-bounds error.\n\n(b) Correct line:\nFOR i ← 0 TO 9",
+    "Explanation": "The array values[0..9] has 10 elements, so the final valid index is 9. A loop that runs to 10 will attempt to access an element that isn't stored in memory for this array.\n\nChanging the loop to:\nFOR i ← 0 TO 9\nensures each valid index is processed exactly once without trying to read outside the array."
   },
   {
-    "Question": "Sample question 23: Explain concept 23.",
-    "Answer": "Step-by-step answer for question 23.",
-    "Explanation": "Full explanation for question 23, assuming no prior knowledge."
+    "Question": "23. A program asks a user to enter a password. The correct password is stored in CORRECT_PASSWORD. The user may attempt a maximum of 3 times.\n\n(a) Write pseudocode using a loop and a counter to enforce the 3-attempt limit.\n(b) Explain how your algorithm prevents the user exceeding 3 attempts.",
+    "Answer": "(a) Example pseudocode:\n\nCONST CORRECT_PASSWORD ← \"Tiger123\"\nattempts ← 0\nsuccess ← FALSE\nWHILE attempts < 3 AND success = FALSE DO\n    password ← INPUT(\"Enter password: \")\n    attempts ← attempts + 1\n    IF password = CORRECT_PASSWORD THEN\n        success ← TRUE\n    ENDIF\nENDWHILE\nIF success = TRUE THEN\n    OUTPUT \"Access granted\"\nELSE\n    OUTPUT \"Account locked\"\nENDIF\n\n(b) The loop condition requires attempts < 3. Each loop increments attempts, so once it reaches 3 the loop cannot run again. This guarantees no more than 3 inputs.",
+    "Explanation": "The WHILE loop checks two conditions:\n- fewer than 3 attempts have been used\n- password has not yet been entered correctly\n\nEach time the loop repeats, attempts increases by 1. Once attempts equals 3, the condition attempts < 3 becomes FALSE and the loop stops, even if the user still hasn't succeeded. This ensures the limit is enforced reliably."
   },
   {
-    "Question": "Sample question 24: Explain concept 24.",
-    "Answer": "Step-by-step answer for question 24.",
-    "Explanation": "Full explanation for question 24, assuming no prior knowledge."
+    "Question": "24. A subroutine IsPrime(n) returns TRUE if n is prime and FALSE otherwise. A prime number has exactly two factors: 1 and itself.\n\n(a) Write pseudocode that tests divisibility by every integer from 2 to n−1.\n(b) Explain why the algorithm can return FALSE immediately upon finding a divisor.",
+    "Answer": "(a) Example pseudocode:\n\nFUNCTION IsPrime(n : INTEGER) RETURNS BOOLEAN\n    FOR i ← 2 TO n - 1\n        IF n MOD i = 0 THEN\n            RETURN FALSE\n        ENDIF\n    NEXT i\n    RETURN TRUE\nENDFUNCTION\n\n(b) If any number between 2 and n−1 divides n with remainder 0, then n has an extra factor and is not prime. There is no need to check further values.",
+    "Explanation": "The loop checks each possible divisor from 2 up to n−1. If n is divisible by any such number, it has more factors than 1 and itself, so it cannot be prime.\n\nBecause this single discovery proves n is composite, the algorithm returns FALSE immediately instead of wasting time checking the remaining values."
   },
   {
-    "Question": "Sample question 25: Explain concept 25.",
-    "Answer": "Step-by-step answer for question 25.",
-    "Explanation": "Full explanation for question 25, assuming no prior knowledge."
+    "Question": "25. A bubble sort is used to sort the array [7, 3, 5, 2, 4].\n\n(a) Describe the comparisons and swaps made during the first pass.\n(b) State the array after the first pass.",
+    "Answer": "(a) First pass:\n- Compare 7 and 3 → swap → [3, 7, 5, 2, 4]\n- Compare 7 and 5 → swap → [3, 5, 7, 2, 4]\n- Compare 7 and 2 → swap → [3, 5, 2, 7, 4]\n- Compare 7 and 4 → swap → [3, 5, 2, 4, 7]\n\n(b) After the first pass the array is: [3, 5, 2, 4, 7]",
+    "Explanation": "Bubble sort compares adjacent elements and swaps them if they are in the wrong order. The largest value gradually moves to the end ('bubbles up').\n\nAfter the four comparisons in the first pass, the number 7 has moved to the final position. The remaining values may still be unsorted, requiring more passes, but the question only concerns the first pass."
   },
   {
-    "Question": "Sample question 26: Explain concept 26.",
-    "Answer": "Step-by-step answer for question 26.",
-    "Explanation": "Full explanation for question 26, assuming no prior knowledge."
+    "Question": "26. A record structure Student contains the fields:\n- Name (STRING)\n- YearGroup (INTEGER)\n- AverageMark (REAL)\n\nAn array Students[0..2] stores three Student records.\n\n(a) Explain what a record is.\n(b) Write pseudocode to output the Name and AverageMark of all students.",
+    "Answer": "(a) A record is a data structure that groups related pieces of data under one name. Each field can have its own data type.\n\n(b) Example pseudocode:\nFOR i ← 0 TO 2\n    OUTPUT Students[i].Name\n    OUTPUT Students[i].AverageMark\nNEXT i",
+    "Explanation": "A record allows multiple fields of different data types to be stored together as one unit. In this case, Student holds a name (text), year group (whole number), and an average mark (real number).\n\nTo output the Name and AverageMark fields for each student, we loop through the array and access the fields of each record:\nFOR i ← 0 TO 2\n    OUTPUT Students[i].Name\n    OUTPUT Students[i].AverageMark\nNEXT i"
   },
   {
-    "Question": "Sample question 27: Explain concept 27.",
-    "Answer": "Step-by-step answer for question 27.",
-    "Explanation": "Full explanation for question 27, assuming no prior knowledge."
+    "Question": "27. A file scores.txt contains one integer per line. A program must count how many scores are greater than or equal to 80.\n\n(a) Write pseudocode that:\n- opens the file\n- reads each score until the end\n- counts scores ≥ 80\n- outputs the count\n- closes the file\n\n(b) Explain why the file must be closed.",
+    "Answer": "(a) Example pseudocode:\ncountHigh ← 0\nOPENFILE \"scores.txt\" FOR READ\nWHILE NOT EOF(\"scores.txt\") DO\n    score ← READLINE(\"scores.txt\")\n    IF score >= 80 THEN\n        countHigh ← countHigh + 1\n    ENDIF\nENDWHILE\nCLOSEFILE \"scores.txt\"\nOUTPUT countHigh\n\n(b) Closing the file releases system resources and prevents corruption. It also allows other programs to access the file safely.",
+    "Explanation": "The program uses a WHILE loop that continues until the end of the file. Each score is processed as it is read. If the score is 80 or above, the counter increases.\n\nClosing the file is essential because open files occupy system resources. Leaving files open can cause data corruption or block other programs from accessing them."
   },
   {
-    "Question": "Sample question 28: Explain concept 28.",
-    "Answer": "Step-by-step answer for question 28.",
-    "Explanation": "Full explanation for question 28, assuming no prior knowledge."
+    "Question": "28. An SQL table Students has the fields StudentID, Name, YearGroup and AverageMark.\n\n(a) Write an SQL query to select students in YearGroup 11 with an AverageMark ≥ 70, showing only Name and AverageMark.\n(b) Explain how your query works.",
+    "Answer": "(a) SELECT Name, AverageMark\nFROM Students\nWHERE YearGroup = 11 AND AverageMark >= 70;\n\n(b) SELECT chooses which columns to display. FROM selects the table. WHERE filters rows to those in YearGroup 11 with AverageMark ≥ 70.",
+    "Explanation": "The SELECT clause chooses the columns Name and AverageMark for display. FROM Students tells the database which table to use. WHERE applies two filters:\n- YearGroup must equal 11.\n- AverageMark must be at least 70.\n\nOnly rows matching both conditions appear in the output."
   },
   {
-    "Question": "Sample question 29: Explain concept 29.",
-    "Answer": "Step-by-step answer for question 29.",
-    "Explanation": "Full explanation for question 29, assuming no prior knowledge."
+    "Question": "29. A program asks the user to enter a number between 1 and 10 but does not check validity.\n\n(a) Explain the term defensive design.\n(b) Rewrite the pseudocode so it keeps asking until a valid number is entered.",
+    "Answer": "(a) Defensive design means planning for invalid input or misuse so the program remains safe and functional. Input should be checked before being accepted.\n\n(b) Example pseudocode:\nREPEAT\n    num ← INPUT(\"Enter a number between 1 and 10\")\nUNTIL num >= 1 AND num <= 10",
+    "Explanation": "Defensive design ensures a program can cope with mistakes or unexpected input. Validation checks ensure only acceptable values are used. In the REPEAT loop, the user is continually prompted until they enter a number that satisfies the condition num >= 1 AND num <= 10."
   },
   {
-    "Question": "Sample question 30: Explain concept 30.",
-    "Answer": "Step-by-step answer for question 30.",
-    "Explanation": "Full explanation for question 30, assuming no prior knowledge."
+    "Question": "30. A program stores the number of minutes each student spends revising per day for 7 days in mins[0..6]. It must:\n- calculate the total minutes\n- calculate the average\n- determine the day (index) with the maximum value\n\n(a) Write pseudocode to perform all tasks in a single loop.\n(b) Explain how the algorithm keeps track of both the total and the maximum.",
+    "Answer": "(a) Example pseudocode:\ntotal ← 0\nmaxMinutes ← mins[0]\nmaxIndex ← 0\nFOR i ← 0 TO 6\n    total ← total + mins[i]\n    IF mins[i] > maxMinutes THEN\n        maxMinutes ← mins[i]\n        maxIndex ← i\n    ENDIF\nNEXT i\naverage ← total / 7\nOUTPUT total\nOUTPUT average\nOUTPUT maxIndex\n\n(b) total accumulates each day's minutes as the loop runs. maxMinutes and maxIndex store the largest value seen so far and the position where it occurred.",
+    "Explanation": "The loop handles all tasks at once:\n- total adds each day's minutes.\n- maxMinutes stores the largest value encountered.\n- maxIndex stores the index where this value appears.\n\nEach iteration compares mins[i] with the current maxMinutes. If the new value is larger, both maxMinutes and maxIndex are updated. After the loop, total and average are calculated, and maxIndex identifies the day with the most revision."
   }
 ]
