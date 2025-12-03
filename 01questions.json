@@ -1,0 +1,177 @@
+[
+  {
+    "Question": "1(a). Define the term 'embedded system'.",
+    "Answer": "An embedded system is a computer system that is built into a larger device in order to perform one specific, dedicated function.",
+    "Explanation": "An embedded system is not a general-purpose computer. Instead, it is designed to carry out a **single specialised task** inside a larger product. Examples include the control system inside a washing machine or the microcontroller inside a microwave. The embedded system cannot run many different applications like a PC; it runs a small set of specific instructions permanently programmed for its purpose."
+  },
+  {
+    "Question": "1(b). Give two examples of embedded systems.",
+    "Answer": "- A washing machine controller\n- A microwave oven controller",
+    "Explanation": "Embedded systems exist inside everyday appliances. A washing machine uses an embedded controller to manage water levels, spin speed, and timing. A microwave oven has one to control the magnetron, timer, and safety interlocks. Any device with a built-in specialised computer counts as an embedded system."
+  },
+  {
+    "Question": "1(c). State one advantage of using an embedded system rather than a general-purpose computer.",
+    "Answer": "Embedded systems require less memory and processing power, making them cheaper and more efficient for a dedicated task.",
+    "Explanation": "General-purpose computers need more memory and a powerful CPU to run many different applications. An embedded system only needs enough hardware to perform its **single dedicated role**, so it uses:\n- fewer components\n- less power\n- less memory\n- simpler software\nThis results in reduced cost, lower energy consumption, and higher reliability for the specific function it performs."
+  },
+  {
+    "Question": "2(a). State what is meant by the term 'clock speed' of a CPU.",
+    "Answer": "Clock speed is the number of cycles the CPU can carry out per second, measured in Hertz (Hz).",
+    "Explanation": "The CPU works in small steps called **clock cycles**. During each cycle, it can perform basic operations such as fetching or executing an instruction. Clock speed measures how many cycles occur every second. For example, a 3 GHz processor performs 3 billion cycles per second. A higher clock speed generally means the CPU can execute instructions faster."
+  },
+  {
+    "Question": "2(b). Explain how increasing the clock speed affects CPU performance.",
+    "Answer": "Increasing the clock speed allows the CPU to carry out more cycles per second, which increases the number of instructions it can process, improving overall performance.",
+    "Explanation": "Each clock cycle allows the CPU to perform part of the fetch-decode-execute cycle. If the CPU has a higher clock speed, it completes these cycles more quickly. This means the processor can execute more instructions in the same amount of time.\n\nFor example:\n- At 2 GHz → 2 billion cycles per second\n- At 3 GHz → 3 billion cycles per second\n\nThe CPU with 3 GHz can theoretically perform **50% more operations** per second. However, real-world performance also depends on other factors such as architecture, cache size, and the number of cores."
+  },
+  {
+    "Question": "3(a). State two components of the CPU.",
+    "Answer": "- Arithmetic Logic Unit (ALU)\n- Control Unit (CU)",
+    "Explanation": "A CPU contains several key internal components. Two fundamental ones assessed in the exam are:\n- **The Arithmetic Logic Unit (ALU):** performs calculations and logic operations.\n- **The Control Unit (CU):** manages the flow of instructions, telling other parts of the CPU what to do.\nOther acceptable answers include registers such as the MDR, MAR, or accumulator. Any two correctly named CPU components earn full marks."
+  },
+  {
+    "Question": "3(b). State the purpose of the Arithmetic Logic Unit (ALU).",
+    "Answer": "The ALU performs all arithmetic and logical operations inside the CPU.",
+    "Explanation": "The ALU is responsible for the mathematical and decision-making operations required by programs. Arithmetic operations include addition, subtraction, multiplication, and division. Logic operations include AND, OR, NOT, and comparison operations such as equals or greater than. Whenever a calculation or logical decision is needed, the CPU relies on the ALU to perform it."
+  },
+  {
+    "Question": "3(c). State the purpose of the Control Unit (CU).",
+    "Answer": "The Control Unit coordinates the activities of the CPU by sending control signals to manage the execution of instructions.",
+    "Explanation": "The Control Unit ensures that the fetch–decode–execute cycle runs correctly. It:\n- fetches instructions from memory,\n- interprets (decodes) what they mean,\n- sends the appropriate control signals to other components like the ALU, registers, and memory.\nIt acts as the CPU's 'orchestra conductor', ensuring all parts work together in the correct order."
+  },
+  {
+    "Question": "4(a). Identify the type of storage shown in the diagram on the paper.",
+    "Answer": "The type of storage shown is **solid-state storage (SSD)**.",
+    "Explanation": "Although you are not using diagrams in your system, the question in the exam shows the structure of a **solid-state drive**. These use **flash memory**, which stores data electronically using floating-gate transistors. SSDs contain no moving parts, unlike hard disk drives (HDDs), which use spinning magnetic platters."
+  },
+  {
+    "Question": "4(b). Give one advantage of this type of storage compared to a hard disk drive (HDD).",
+    "Answer": "An SSD is faster at reading and writing data than a hard disk drive.",
+    "Explanation": "Solid-state drives have no moving parts. This allows them to:\n- access data much more quickly,\n- be more durable (less risk of mechanical failure),\n- use less power,\n- run silently.\nAny one of these advantages is accepted in the exam. The most commonly cited is the **much faster read/write speed**."
+  },
+  {
+    "Question": "5(a). Describe how virtual memory is used by a computer system.",
+    "Answer": "Virtual memory uses secondary storage, such as a hard disk or SSD, to act as an extension of main memory when RAM becomes full.",
+    "Explanation": "When a computer does not have enough physical RAM to hold all active programs and data, it uses a section of the hard disk or SSD as temporary extra memory. This is known as virtual memory. Pages of data are moved between RAM and secondary storage as needed. Although this prevents the system from crashing due to lack of memory, access to virtual memory is much slower than access to RAM."
+  },
+  {
+    "Question": "5(b). Explain one disadvantage of using virtual memory.",
+    "Answer": "Virtual memory is much slower than RAM, which can cause programs to run slowly or become unresponsive.",
+    "Explanation": "Virtual memory relies on secondary storage. Even SSDs are significantly slower than RAM. When the system frequently swaps data between RAM and virtual memory, a slowdown known as 'disk thrashing' can occur. This reduces performance and makes applications lag when switching between tasks."
+  },
+  {
+    "Question": "6(a). State the role of the operating system in file management.",
+    "Answer": "The operating system organises files and directories, manages storage locations, and controls access to files.",
+    "Explanation": "File management is a key function of the operating system. It provides the ability to:\n- create, delete, move, and rename files\n- organise files into folders (directories)\n- keep track of where files are stored on the disk\n- enforce permissions and security so only authorised users can access certain files\nWithout the OS managing these processes, users and programs could not reliably store or retrieve data."
+  },
+  {
+    "Question": "6(b). State the role of the operating system in memory management.",
+    "Answer": "The operating system allocates memory to programs and ensures each program accesses only its own allocated memory.",
+    "Explanation": "Memory management ensures programs do not interfere with one another. The OS:\n- divides memory into sections\n- assigns memory to processes\n- tracks which memory locations are free or in use\n- prevents one program from overwriting another's data\n- handles moving data between RAM and virtual memory if needed\nThis ensures stability and prevents system crashes."
+  },
+  {
+    "Question": "6(c). Describe two functions of user management performed by the operating system.",
+    "Answer": "Two functions are:\n1. Creating and managing user accounts.\n2. Controlling access rights and permissions.",
+    "Explanation": "User management allows multiple people to use the same computer securely. The operating system:\n1. Creates, edits, and deletes user accounts.\n2. Manages login authentication (e.g., passwords, PINs).\n3. Controls permissions such as read/write access to files, application usage, and administrator privileges.\nThese features ensure only authorised users can access specific data or system settings."
+  },
+  {
+    "Question": "7(a). State two features of open source software.",
+    "Answer": "- The source code is publicly available.\n- Users can modify and redistribute the software.",
+    "Explanation": "Open source software is developed under a licence that makes the source code accessible to anyone. This means:\n1. **The code is viewable** — users can inspect how the software works.\n2. **Modification is allowed** — users can change or improve the code.\n3. **Redistribution is permitted** — users may share modified or unmodified versions.\nThese are the core principles that define open source software."
+  },
+  {
+    "Question": "7(b). Explain one benefit of using open source software.",
+    "Answer": "Open source software can be customised to meet specific needs because the source code is available for modification.",
+    "Explanation": "Since users have access to the source code, they are free to adapt the software for their own purposes. For example, a business can add new features or remove unwanted ones. This flexibility is a major advantage over proprietary software, where the user must rely on the vendor for changes."
+  },
+  {
+    "Question": "7(c). Explain one drawback of using open source software.",
+    "Answer": "Open source software may not include official technical support, which can make troubleshooting more difficult.",
+    "Explanation": "Unlike commercial proprietary software, open source projects often rely on voluntary community support. If a user encounters a problem, there may be no guaranteed helpdesk, patch schedule, or customer service team. This can be a disadvantage for businesses that require reliable, professional support."
+  },
+  {
+    "Question": "8(a). Describe what is meant by a local area network (LAN).",
+    "Answer": "A LAN is a network that covers a small geographical area, such as a single building or site.",
+    "Explanation": "LANs connect computers and devices within a limited area like a school, office, or home. They typically use wired Ethernet or Wi-Fi. Because the distances are small, LANs tend to have high data transfer speeds and low latency. LAN equipment, such as routers or switches, is usually owned and maintained by the organisation itself."
+  },
+  {
+    "Question": "8(b). State one piece of hardware needed to create a LAN.",
+    "Answer": "A network switch.",
+    "Explanation": "A switch is a networking device that connects multiple computers and devices in a LAN. It forwards data only to the device it is intended for, improving network efficiency. Other acceptable answers from the exam include network interface cards (NICs), routers, or wireless access points."
+  },
+  {
+    "Question": "9(a). State one method of preventing phishing attacks.",
+    "Answer": "Users can check the sender’s email address and avoid clicking suspicious links.",
+    "Explanation": "Phishing attacks attempt to trick users into revealing personal information. One effective defence is teaching users to inspect email addresses carefully and avoid clicking links or attachments from unknown or suspicious sources. Other valid exam answers include using spam filters or using anti-phishing browser tools."
+  },
+  {
+    "Question": "9(b). State one method of preventing brute force attacks.",
+    "Answer": "Use account lockout after a number of failed login attempts.",
+    "Explanation": "Brute force attacks try many password combinations until the correct one is found. Locking an account after several failed attempts makes this impossible, because the attacker cannot continue guessing indefinitely. Other acceptable answers include using strong passwords, CAPTCHAs, or rate-limiting login attempts."
+  },
+  {
+    "Question": "9(c). Explain how using strong passwords can help prevent cyber security attacks.",
+    "Answer": "Strong passwords take much longer for attackers to guess or crack, reducing the likelihood of successful access.",
+    "Explanation": "Weak passwords are easy for attackers to guess, especially using brute force or dictionary attacks. Strong passwords typically include a mixture of letters, digits, and symbols. Their length and complexity greatly increase the number of possible combinations, making automated cracking extremely time-consuming or practically impossible."
+  },
+  {
+    "Question": "10(a). Describe what is meant by the term ‘malware’.",
+    "Answer": "Malware is software that is designed to intentionally cause harm to a computer system or its data.",
+    "Explanation": "The term malware comes from ‘malicious software’. It includes viruses, worms, ransomware, spyware, trojans, and other harmful programs. Malware might delete files, steal data, damage systems, encrypt data for ransom, or monitor user activity without permission."
+  },
+  {
+    "Question": "10(b). State one purpose of anti-malware software.",
+    "Answer": "Anti-malware software detects and removes malicious software from a computer system.",
+    "Explanation": "Anti-malware tools scan files and programs for known threats. They prevent malicious software from executing, isolate or delete infected files, and provide real-time protection to stop new attacks. This helps keep systems safe from viruses, trojans, ransomware, and similar threats."
+  },
+  {
+    "Question": "11(a). Describe the purpose of the Data Protection Act.",
+    "Answer": "The Data Protection Act ensures that personal data is collected, stored, and processed safely and legally.",
+    "Explanation": "The Data Protection Act (DPA) protects individuals by requiring organisations to handle personal data responsibly. It ensures data is:\n- collected fairly,\n- kept secure,\n- used only for stated purposes,\n- accurate and up to date,\n- not kept longer than necessary.\nIts purpose is to protect individuals’ privacy and prevent misuse of personal information."
+  },
+  {
+    "Question": "11(b). State one principle of the Data Protection Act.",
+    "Answer": "Personal data must be kept secure.",
+    "Explanation": "One of the DPA’s core principles is that data must be protected against unauthorised access, accidental loss, or damage. Organisations implement this using passwords, encryption, secure storage, and access controls. Other acceptable principles include collecting data fairly, using data only for declared purposes, or keeping data accurate."
+  },
+  {
+    "Question": "11(c). Explain why organisations must comply with the Data Protection Act.",
+    "Answer": "Because failure to comply can result in legal penalties and loss of trust, and it ensures the privacy and rights of individuals are protected.",
+    "Explanation": "The DPA is a legal requirement. If an organisation mishandles personal data, it can face large fines and legal action. More importantly, compliance protects people from identity theft, fraud, and misuse of their information. Organisations also maintain customer trust by following the law and safeguarding data responsibly."
+  },
+  {
+    "Question": "12(a). State what is meant by an environmental impact of computer systems.",
+    "Answer": "An environmental impact is the effect that computer systems have on natural resources, energy use, and the physical environment.",
+    "Explanation": "Computer systems contribute to environmental impacts through electricity usage, heat generation, electronic waste, and pollution created during manufacturing. Environmental impacts refer to how these activities affect the planet—for example, increased carbon emissions or landfill waste."
+  },
+  {
+    "Question": "12(b). Describe one negative environmental impact caused by computer systems.",
+    "Answer": "Computer systems contribute to electronic waste when old devices are thrown away.",
+    "Explanation": "As devices become outdated or fail, they are often discarded. Many contain toxic materials such as lead, mercury, and plastics that do not decompose. When dumped in landfills, they can pollute soil and water. This is a major modern environmental problem caused directly by the rapid turnover of electronic technology."
+  },
+  {
+    "Question": "13(a). Explain what is meant by a character set.",
+    "Answer": "A character set is the collection of characters a computer system can represent, each mapped to a unique binary code.",
+    "Explanation": "Computers store text as binary. A character set provides the list of characters (letters, digits, symbols) and the binary value assigned to each one. For example, ASCII assigns 7-bit binary codes to 128 characters. Unicode provides many more characters for global languages and symbols. Without a character set, computers would not know how to represent or store text."
+  },
+  {
+    "Question": "13(b). State one reason why Unicode is used instead of ASCII.",
+    "Answer": "Unicode supports many more characters, including characters from all major world languages.",
+    "Explanation": "ASCII is limited to 128 characters, mostly English letters, digits, and common punctuation. Unicode was created to support thousands of characters including accented letters, mathematical symbols, emojis, and non-Latin scripts such as Chinese, Arabic, and Greek. This makes Unicode far more flexible for global communication and modern applications."
+  },
+  {
+    "Question": "13(c). State the number of bits used to represent each ASCII character.",
+    "Answer": "7 bits.",
+    "Explanation": "ASCII uses 7 bits to store each character. This allows a total of 128 different binary patterns, which is enough for English letters, digits, punctuation, and control codes. Extended ASCII uses 8 bits, but standard ASCII is defined as 7-bit."
+  },
+  {
+    "Question": "14(a). Explain what is meant by lossy compression.",
+    "Answer": "Lossy compression permanently removes some data to reduce the file size.",
+    "Explanation": "In lossy compression, certain details that are less noticeable to humans are deleted to make the file smaller. This results in smaller image, audio, or video files. However, because the removed data cannot be recovered, lossy compression reduces the quality slightly. JPEG for images and MP3 for audio are common examples of lossy formats."
+  },
+  {
+    "Question": "Question 14(b). Give one file type that commonly uses lossy compression.",
+    "Answer": "JPEG.",
+    "Explanation": "JPEG (Joint Photographic Experts Group) is a commonly used lossy image format. It discards fine image details that the human eye is less likely to notice, achieving a significant reduction in file size. Other acceptable answers include MP3 (audio) or MP4 (video)."
+  }
+]
